@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.5" tiledversion="1.7.0" orientation="isometric" renderorder="right-down" compressionlevel="0" width="10" height="11" tilewidth="64" tileheight="32" infinite="0" nextlayerid="9" nextobjectid="58">
+ <properties>
+  <property name="Background" value="custom"/>
+  <property name="Background Animation" value="/server/assets/custom/backgrounds/BG2.animation"/>
+  <property name="Background Texture" value="/server/assets/custom/backgrounds/BG2.png"/>
+  <property name="Background Vel X" type="float" value="0.1"/>
+  <property name="Background Vel Y" type="float" value="0.1"/>
+  <property name="Name" value="Rick Rolled"/>
+  <property name="Song" value="/server/assets/music/UltimateWarrior.ogg"/>
+ </properties>
+ <tileset firstgid="1" source="../assets/tiles/floor.tsx"/>
+ <tileset firstgid="4" source="../assets/tiles/warp.tsx"/>
+ <tileset firstgid="10" source="../assets/tiles/hp_warp.tsx"/>
+ <tileset firstgid="15" source="../assets/tiles/home_warp.tsx"/>
+ <tileset firstgid="20" source="../assets/tiles/tree.tsx"/>
+ <tileset firstgid="24" source="../assets/tiles/coffee.tsx"/>
+ <tileset firstgid="28" source="../assets/tiles/gate.tsx"/>
+ <tileset firstgid="33" source="../assets/tiles/cloud.tsx"/>
+ <tileset firstgid="45" source="../assets/tiles/GlowLrg.tsx"/>
+ <tileset firstgid="48" source="../assets/tiles/BoardRelayObject.tsx"/>
+ <layer id="1" name="Floor" width="10" height="11">
+  <data encoding="csv">
+0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0
+</data>
+ </layer>
+ <objectgroup id="5" name="Object Layer"/>
+ <layer id="7" name="Tile Layer 2" width="10" height="11" offsetx="0" offsety="-16">
+  <data encoding="csv">
+0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,
+0,0,0,47,47,0,0,0,0,0,
+0,0,47,47,47,47,0,0,0,0,
+0,0,47,47,47,47,0,0,0,0,
+0,0,0,47,47,47,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0
+</data>
+ </layer>
+ <objectgroup id="8" name="Object Layer 2" offsetx="0" offsety="-16">
+  <object id="50" name="Hp Warp" type="Home Warp" gid="15" x="144" y="144" width="60" height="32">
+   <properties>
+    <property name="Direction" value="Up"/>
+   </properties>
+  </object>
+  <object id="51" name="RickRoll" type="NPC" x="80" y="80">
+   <properties>
+    <property name="Animation Name" value="UltimateWarrior"/>
+    <property name="Asset Name" value="UltimateWarrior"/>
+    <property name="Dialogue Type" value="none"/>
+    <property name="Direction" value="Down Left"/>
+    <property name="Event Name" value="RickRolled"/>
+    <property name="Text 1">We’re no strangers to love. You know the rules and so do I. A full commitment’s what I’m thinking of. You wouldn’t get this from any other guy. I just wanna tell you how I’m feeling. Gotta make you understand. Never gonna give you up. Never gonna let you down. Never gonna run around and desert you. Never gonna make you cry. Never gonna say goodbye. Never gonna tell a lie and hurt you. We’ve known each other for so long. Your heart’s been aching, but you’re too shy to say it. Inside, we both know what’s been going on. We know the game, and we’re gonna play it. And if you ask me how I’m feeling. Don’t tell me you’re too blind to see. Never gonna give you up. Never gonna let you down. Never gonna run around and desert you. Never gonna make you cry. Never gonna say goodbye. Never gonna tell a lie and hurt you. Never gonna give you up. Never gonna let you down. Never gonna run around and desert you. Never gonna make you cry. Never gonna say goodbye. Never gonna tell a lie and hurt you. Ooh Give you up. Ooh-ooh Give you up. Ooh-ooh. Never gonna give, never gonna give Give you up
+Ooh-ooh. Never gonna give, never gonna give Give you up. We’ve known each other for so long. Your heart’s been aching, but you’re too shy to say it. Inside, we both know what’s been going on. We know the game, and we’re gonna play it. I just wanna tell you how I’m feeling. Gotta make you understand. Never gonna give you up. Never gonna let you down. Never gonna. run around and desert you. Never gonna make you cry. Never gonna say goodbye. Never gonna tell a lie and hurt you. Never gonna give you up. Never gonna let you down. Never gonna run around and desert you. Never gonna make you cry. Never gonna say goodbye. Never gonna tell a lie and hurt you. Never gonna give you up. Never gonna let you down. Never gonna run around and desert you. Never gonna make you cry. Never gonna say goodbye. Never gonna tell a lie and hurt you</property>
+   </properties>
+   <point/>
+  </object>
+  <object id="54" gid="48" x="48" y="64" width="97" height="48" visible="0">
+   <properties>
+    <property name="Interact Relay" type="object" value="51"/>
+   </properties>
+  </object>
+  <object id="57" gid="49" x="64" y="48" width="97" height="48" visible="0">
+   <properties>
+    <property name="Interact Relay" type="object" value="51"/>
+   </properties>
+  </object>
+ </objectgroup>
+</map>
