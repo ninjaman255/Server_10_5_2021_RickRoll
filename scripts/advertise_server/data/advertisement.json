@@ -5,9 +5,9 @@
     "advertisements":[
         {
             "unique_server_id":"UltimateWarrior",
-            "name":"Ultimate Warrior",
+            "name":"UltimateWarrior",
             "description":"Fight the Ultimate warrior",
-            "tags":["Boss"],
+            "tags":[],
             "address":"159.223.165.219:1313",
             "data":"",
             "icon":"advertisement.png",
